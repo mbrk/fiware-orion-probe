@@ -17,3 +17,9 @@ Open http://localhost:3000 (if not specified otherwise in ENV)
     '/' - list all entities in instance of context broker
     '/entity/<ID> - query specified entity
     '/type/<TYPE> - query all entities with specified type
+    '/delete/<ID> - delete specified entity
+    
+    
+# Versions
+
+*0.1.0 first go

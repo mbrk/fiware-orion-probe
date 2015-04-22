@@ -42,4 +42,18 @@ router.get('/type/:type', function(req, res, next){
   );
 });
 
+
+router.get('/delete/:entity', function(req, res, next){
+    var e = req.params.entity;
+    //console.log('delete', e);
+    orion.deleteEntity(e).then(
+            function(success){
+                res.send(success);
+            },
+            function(error){
+                res.send(error);
+            }
+    );
+});
+
 module.exports = router;
