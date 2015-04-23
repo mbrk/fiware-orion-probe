@@ -12,7 +12,11 @@ Copy /config/config.sample.js to /config/config.js. and adjust settings.
 
     node bin/www
     
-Open http://localhost:3000 (if not specified otherwise in ENV)
+To specify a port (default is 3000)
+
+    PORT=3333 node bin/www
+    
+Open http://localhost:<PORT> 
 
     '/' - list all entities in instance of context broker
     '/entity/<ID> - query specified entity
